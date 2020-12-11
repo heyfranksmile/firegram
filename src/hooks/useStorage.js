@@ -1,5 +1,5 @@
 const { useState, useEffect } = require('react');
-const { appStorage } = require('../firebase/config');
+const { appStorage, timestamp, appFirestore } = require('../firebase/config');
 
 const useStorage = (file) => {
   console.log('useStorage called');
@@ -10,6 +10,8 @@ const useStorage = (file) => {
   useEffect(() => {
     console.log('CH useEffect called');
     const storageRef = appStorage.ref(file.name);
+    const collectionRef = appFirestore.collection('images');
+
     storageRef.put(file).on(
       'state_changed',
       ({ bytesTransferred, totalBytes }) => {
@@ -22,6 +24,8 @@ const useStorage = (file) => {
       async () => {
         console.log('upload complete + url state to change');
         let url = await storageRef.getDownloadURL();
+        const createdAt = timestamp();
+        collectionRef.add({ url, createdAt });
         setUrl(url);
       }
     );

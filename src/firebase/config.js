@@ -16,5 +16,6 @@ firebase.initializeApp(firebaseConfig);
 
 const appStorage = firebase.storage(); //invoking it initiates our storage service
 const appFirestore = firebase.firestore(); //initiates database service
+const timestamp = firebase.firestore.FieldValue.serverTimestamp; //evaluates to a function that will create a timestamp
 
-export { appStorage, appFirestore };
+export { appStorage, appFirestore, timestamp };
