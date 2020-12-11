@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/firegram/static/css/main.e9c853b0.chunk.css",
+    "main.js": "/firegram/static/js/main.78826e1d.chunk.js",
+    "main.js.map": "/firegram/static/js/main.78826e1d.chunk.js.map",
+    "runtime-main.js": "/firegram/static/js/runtime-main.76354ce8.js",
+    "runtime-main.js.map": "/firegram/static/js/runtime-main.76354ce8.js.map",
+    "static/js/2.9f67365c.chunk.js": "/firegram/static/js/2.9f67365c.chunk.js",
+    "static/js/2.9f67365c.chunk.js.map": "/firegram/static/js/2.9f67365c.chunk.js.map",
+    "index.html": "/firegram/index.html",
+    "static/css/main.e9c853b0.chunk.css.map": "/firegram/static/css/main.e9c853b0.chunk.css.map",
+    "static/js/2.9f67365c.chunk.js.LICENSE.txt": "/firegram/static/js/2.9f67365c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76354ce8.js",
+    "static/js/2.9f67365c.chunk.js",
+    "static/css/main.e9c853b0.chunk.css",
+    "static/js/main.78826e1d.chunk.js"
+  ]
+}
