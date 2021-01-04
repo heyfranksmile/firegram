@@ -30,6 +30,7 @@ const useStorage = (file) => {
       }
     );
   }, [file]);
+  // how does this [file] work? 
 
   console.log('stuff returned');
   return { progress, error, url };
